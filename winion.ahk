@@ -145,4 +145,9 @@ LAlt & 9::switchDesktopByNumber(9)
 LAlt & .::switchDesktopByNumber(CurrentDesktop + 1)
 LAlt & ,::switchDesktopByNumber(CurrentDesktop - 1)
 LAlt & c::createVirtualDesktop()
-LAlt & d::deleteVirtualDesktop()
+LAlt & x::deleteVirtualDesktop()
+
+LAlt & h::Send, #{Left}
+LAlt & j::Send, #{Down}
+LAlt & k::Send, #{Up}
+LAlt & l::Send, #{Right}
