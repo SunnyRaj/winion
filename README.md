@@ -19,6 +19,9 @@ Install AutoHotKey, then run the desktop_switcher.ahk script (open with AutoHotK
         <Alt> + x               - Delete the current virtual desktop
 
 ### Window layout
+
+![](An AutoHotKey script for Windows that lets a user change virtual desktops using keyboard shortcuts inspired by [Notion / Ion3](http://notion.sourceforge.net/) and [Vim](http://vimsheet.com/images/hjkl.png).
+
         <Alt> + h               - Send window left.
         <Alt> + j               - Send window down.
         <Alt> + k               - Send window up.
