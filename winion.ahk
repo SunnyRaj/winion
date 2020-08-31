@@ -1,3 +1,8 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
 ; Globals
 DesktopCount = 2        ; Windows starts with 2 desktops at boot
 CurrentDesktop = 1      ; Desktop count is 1-indexed (Microsoft numbers them this way)
@@ -147,7 +152,14 @@ LAlt & ,::switchDesktopByNumber(CurrentDesktop - 1)
 LAlt & c::createVirtualDesktop()
 LAlt & x::deleteVirtualDesktop()
 
-LAlt & h::Send, #{Left}
-LAlt & j::Send, #{Down}
-LAlt & k::Send, #{Up}
-LAlt & l::Send, #{Right}
+; Snap Windows
+RAlt & s::Send, #{Left}
+RAlt & d::Send, #{Down}
+RAlt & e::Send, #{Up}
+RAlt & f::Send, #{Right}
+
+; Arrow keys
+<!h::Send,{Left}
+<!j::Send,{Down}
+<!k::Send,{Up}
+<!l::Send,{Right}
